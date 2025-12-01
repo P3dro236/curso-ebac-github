@@ -1,0 +1,341 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+nav img{
+  z-index: 1;
+}
+body{
+  background-color: rgba(34, 34, 34, 1);
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  padding-top: 100px;
+}
+#img-1200x300, #img-600x300, #img-450x300{
+  display: none;
+}
+h1, h2, h3{
+  font-family: "Bebas Neue", serif;
+}
+h1, h2{
+  font-size: 3.5em;
+}
+h3{
+  font-size: 2em;
+}
+.sobre-a-loja .container h1, .sobre-a-loja .container p, .produtos, nav .container a, .produtos button, h2, footer, .input-container button{
+  color: #F2EDEB;
+}
+.container{
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+}
+.wrapper-res-link, .wrapper-res{
+  display: none;
+}
+nav{
+  transition: all .5s;
+  margin: auto 0;
+  width: 100%;
+  background-color: #394053;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 1;
+}
+.navigate{
+  height: 90px;
+}
+nav .container{
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  justify-content: space-between;
+}
+nav .container .link{
+  display: flex;
+  justify-content: space-evenly;
+  gap: 15px;
+  position: relative;
+}
+.sub-menu li{
+  position: absolute;
+  left: 0;
+}
+nav .container .link ul{
+  list-style: none;
+  position: sticky;
+}
+nav .container .link ul a{
+  text-decoration: none;
+}
+nav .container .search-div{
+  width: 30%;
+  display: flex;
+  gap: 10px;
+}
+nav .container .search-div input{
+  width: 75%;
+  height: 32px;
+  border-radius: 4px;
+  padding: 0 9px;
+}
+.search-div input:focus{
+  outline: none;
+}
+nav button img{
+  max-width: 32px;
+}
+nav .container .search-div button{
+  width: 10%;
+  padding: 0;
+  height: 32px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.sobre-a-loja .container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 25px 0;
+}
+.sobre-a-loja .container .img-wrapper{
+  display: flex;
+  justify-content: center;
+}
+.sobre-a-loja .container p{
+  font-size: 1.5em;
+  text-align: center;
+}
+.produtos{
+  text-align: center;
+  margin-top: 45px;
+}
+.produtos .container ul{
+  display: grid;
+  grid-template-columns: repeat(4, 24%);
+  column-gap: 1%;
+}
+.produtos .container ul li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #394053;
+  padding: 22px;
+  margin: 45px 0;
+}
+.produtos .container ul li img{
+  width: 265px;
+  margin-bottom: 25px
+}
+.produtos p{
+  margin-bottom: 15px;
+}
+.produtos .container ul li button,.input-container button {
+  width: 90%;
+  height: 32px;
+  border-radius: 5px;
+  background-color: rgb(20, 199, 20);
+  border: 0;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 15px 0 0 0;
+}
+.produtos .container ul li button:hover, .input-container button:hover{
+  background-color: rgb(0, 154, 5);
+  transition: ease-out .1s;
+}
+.produtos em{
+  color: rgb(189, 29, 29);
+  font-size: .8em;
+  text-decoration: line-through;
+}
+.contact-us .container{
+  text-align: center;
+  border-top: .1px solid #fff;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  text-align: center;
+}
+.input-container form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-right: 1px solid #fff;
+}
+.input-container input{
+  width: 100%;
+  height: 32px;
+  padding: 0 8px;
+  text-align: center;
+}
+.input-container textarea:focus, .input-container input:focus{
+  outline: none;
+}
+.input-container textarea{
+  resize: none;
+  width: 100%;
+  height: 220px;
+  text-align: center;
+  padding: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1em;
+}
+.contact{
+  padding: 0 10px;
+
+}
+.contact img{
+  width: 50px;
+  cursor: pointer;
+  margin: 40px 20px 0;
+}
+.input-container button{
+  width: 45%;
+  height: 32px;
+  cursor: pointer;
+}
+footer{
+  background-color: #A57982;
+  text-align: center;
+  height: 22px;
+}
+.flex-box{
+  display: flex;
+}
+
+@media screen and (min-width: 1220px) {
+  #img-1200x300{
+    display: block;
+  }
+  
+}
+@media screen and (max-width: 1220px) and (min-width:641px) {
+  #img-600x300{
+    display: block;
+  }
+  .produtos .container ul{
+    display: grid;
+    grid-template-columns: 49% 49%;
+    column-gap: 1%;
+  }
+  .produtos .container{
+    padding: 0 5%;
+  }
+  nav{
+    padding: 0 5%;
+  }
+}
+@media screen and (max-width:640px) {
+  #img-450x300{
+    display: block;
+  }
+  .produtos .container ul{
+    display: grid;
+    grid-template-columns: 90%;
+    column-gap: 1%;
+  }
+  .produtos .container ul{
+
+    justify-content: center;
+  }
+  .contact-us .container{
+    grid-template-columns: 100%;
+    
+  }
+  .input-container form{
+    border: none;
+    border-bottom: 1px solid #fff;
+  }
+  nav .container .link,nav .container .search-div{
+    display: none;
+  }
+  nav .container{
+    padding: 0 5%;
+  }
+  .navigate-open{
+    height: 140px;
+    transition: all .5s;
+  }
+  nav button{
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+  }
+  .wrapper-res{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+
+  }
+  .wrapper-res input{
+    height: 45px;
+    width: 80%;
+    padding: 0 8px;
+  }
+  .wrapper-res input:focus{
+    outline: none;
+  }
+  .wrapper-res-link{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    padding: 20px 0;
+    flex-direction: row;
+    column-gap: 10px;
+    width: 100%;
+    left: 14%;
+    z-index: 0;
+  }
+  .wrapper-res-link ul{
+    list-style-type: none;
+  }
+  .wrapper-res-link ul a{
+    text-decoration: none;
+
+  }
+  .hidden{
+    display: none;
+  }
+  .flex-box{
+    display: flex;
+  }
+}
+@media screen and (max-width:640px) and (orientation: landscape){
+  #img-450x300{
+    display: block;
+  }
+  .produtos .container ul{
+    display: grid;
+    grid-template-columns: 49%;
+    column-gap: 1%;
+  }
+  .produtos .container ul{
+
+    justify-content: center;
+  }
+  .contact-us .container{
+    grid-template-columns: 49%;
+    
+  }
+  .input-container form{
+    border: none;
+    border-bottom: 1px solid #fff;
+  }
+  .link ul{
+    background-color: red;
+  }
+
+
+}
