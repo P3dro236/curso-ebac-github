@@ -1,0 +1,187 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-image: url(../styles/imagens/background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Roboto", serif;
+  background-attachment: fixed;
+  
+
+}
+@font-face {
+  font-family: 'Trajan Pro Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Trajan Pro Regular'), url('TrajanPro-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Trajan Pro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Trajan Pro Bold'), url('TrajanPro-Bold.woff') format('woff');
+}
+.link-container ul li, section .container h2, section h2, .link-container ul li, section .container .section-container-followus h3, #contact-us h3, footer{
+  font-family:'Trajan Pro Regular';
+  color: #fff;
+}
+header{
+  padding: 16px 0;
+  background-color: #2f2f46;
+  color: #fff;
+}
+.container{
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+}
+header nav .container .nav-img-container img{
+  height: 72px;
+}
+header nav .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.link-container ul li{
+  display: inline;
+  margin-left: 16px;
+  font-weight: bold;
+  font-size:24px
+}
+.link-container ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+.link-container ul li a:hover{
+  text-decoration: underline;
+  color: #a298af;
+}
+section .container .section-about-img-container img{
+  height: 420px;
+}
+section .container{
+  display: flex;
+  padding-top: 32px;
+  align-items: flex-start;
+}
+section .container h2{
+  text-align: center;
+  color: #fff;
+  margin: 12px 0 38px 0;
+  align-self: flex-start
+}
+section .container p{
+  font-size: 22px;
+  color: #fff;
+}
+.sectin-game-img-container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  gap: 15px;
+}
+section h2{
+  color: #fff;
+  text-align: center;
+}
+.sectin-game-img-container img{
+  height: 220px;
+  margin-bottom: 18px;
+}
+#about-us{
+  margin-top: 64px;
+}
+#about-us .container{
+  padding: 0;
+}
+#about-us .container{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: right;
+}
+#team-cherry-logo{
+  height: 310px;
+}
+#logo-x, #logo-youtube{
+  height: 36px;
+  align-self: center;
+}
+#contact-us .container{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-bottom: 45px;
+}
+section textarea{
+  resize: none;
+}
+.logo-wrapper{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+.form-contact-us{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  text-align: center;
+}
+.form-contact-us h3{
+  margin-bottom: 16px;
+}
+#contact-us hr{
+  height: 330px;
+}
+.form-contact-us form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family:'Trajan Pro Regular';
+  font-size: 26px;
+}
+.form-contact-us form input, .form-contact-us textarea{
+  width: 75%;
+  margin-bottom: 6px;
+  text-align: center;
+  font-size: 18px;
+}
+.form-contact-us form input{
+  height: 34px;
+}
+.form-contact-us textarea{
+  height: 120px;
+  font-family: "Roboto", serif;
+
+  padding: 6px;
+}
+h3{
+  font-size: 24px;
+}
+.form-contact-us button{
+  width: 75%;
+  font-family: "Roboto", serif;
+  font-weight: normal;
+  font-size: 20px;
+  height: 34px;
+}
+.form-contact-us button:hover{
+  cursor: pointer;
+  background-color: #201f32;
+  border: 1px solid #fff;
+  color: #fff;
+  
+}
+input:focus, textarea:focus{
+  outline-color: #201f32;
+}
+footer{
+  padding: 5px;
+  text-align: center;
+  background-color: #2f2f46;
+}
